@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+	<title> Sudoku Puzzle </title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Play sudoku puzzle and refresh your mind. Sudoku puzzle help you to sharp your mathematical skills." />
+		<meta name="keywords" content="sudoku , puzzle, free, games, math , mathematics, play, start, timer, find, search, i20job, " />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="revisit-after" content="7 days" />
+		<meta name="robots" content="all" />
+		<meta name="web_author" content="i20job" /> 
+		<meta name="googlebot" content="noodp" />
+		<meta name="googlebot" content="noarchive" />
+		<meta name="googlebot" content="nosnippet" />
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+	
+	<link rel="stylesheet" type="text/css" href="css/inclusive.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53890245-3', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+<body>
+	<div class='newGameContainer'>
+		<h2> Start New Game:</h2>
+		<table id='difficulties'>
+			<tr>
+				<td data-val='veryEasy' class='option'>
+					<div>
+						very easy
+					</div>
+				</td>
+				<td data-val='easy' class='option' >
+					<div>
+						easy
+					</div>
+				</td>
+				<td data-val='medium' class='option' >
+					<div>
+						Medium
+					</div>
+				</td>
+				<td data-val='hard' class='option'>
+					<div>
+						Hard
+					</div>
+				</td>
+				<td data-val='veryHard'  class='option'>
+					<div>
+						Very Hard
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class='startGame'>
+					<div>
+						Start
+					</div>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<table class="sudokuContainer">
+	</table>
+	
+	<!-- timer view -->
+		<div class='timeTakenConatiner' style='display:none;'>
+			<div>Time taken :</div>
+			<div>
+				<span id='hours'>0</span> :
+				<span id='minutes'>0</span> :
+				<span id='seconds'>0</span>
+				<button onclick='pauseTimer()' id='controlTimer'>pause</button>
+			</div>
+		</div>
+	<!-- timer view -->
+	
+	<!-- popup view -->
+	<link rel="stylesheet" type="text/css" href="css/popUp.css" />
+	
+	<table class='popUpContainer'>
+		<tr class='popUpContainerBlock'>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class='popUpContainerBlock'>
+			<td></td>
+			<td class='popUp'>
+				<div class='popUpHeader'>ff</div>
+				<div class='popUpBody'> 
+					<div class='popUpBodyContent'>
+					kkj
+					</div>
+				</div>
+				<table class='popUpActions'>
+					<tr class='Actions'>
+						<td class='popUpActionsOk'>
+							llkj
+						</td>
+						
+					</tr>
+				</table>
+			</td>
+			<td></td>
+		</tr>
+		<tr class='popUpContainerBlock'>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<!-- popup view -->
+
+	<script type="text/javascript" src="js/sudoku.js"></script>
+	<script type="text/javascript" src="js/timer.js"></script>
+	<script>
+		/*if(screen.width <= 400){
+			$('.sudokuContainer').attr('style',"width:100%;");
+		} else if(screen.width <= 800){
+			$('.sudokuContainer').attr('style',"width:70%; height: 60%;");
+		} else if(screen.width <= 1000){
+			$('.sudokuContainer').attr('style',"width: 60%; height: 60%;");
+		}*/
+	</script>
+</body>
+</html>

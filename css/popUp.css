@@ -1,0 +1,111 @@
+		.popUpContainer{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			border-collapse: collapse;
+			background-color: rgba(0,0,0,0.4);
+			display: none;
+		}
+		.popUpContainerBlock > td{
+			width: 33.3%;
+			height: 33.3%;
+			background-color: #fff;
+		}
+		.popUpContainerBlock:nth-child(1) > td, .popUpContainerBlock:nth-child(3) > td{
+			height: 29.3%;
+			background-color: transparent;
+		}
+		.popUpContainerBlock:nth-child(1) > td{
+			height: 22.3%;
+		}
+		.popUpContainerBlock:nth-child(3) > td{
+			height: 35.3%;
+		}
+		.popUpContainerBlock:nth-child(2) > td{
+			height: 40%;
+		}
+		
+		.popUpContainerBlock > td:nth-child(1), .popUpContainerBlock > td:nth-child(3){
+			width: 31.3%;
+			background-color: transparent;
+		}
+		.popUpContainerBlock > td:nth-child(2){
+			width: 38%;
+		}
+		.popUp{
+			border-radius: 1%;
+		}
+		.popUpHeader, .popUpBody, .popUpActions{
+			width: 100%;
+			clear: both;
+			text-align: center;
+		}
+		.popUpHeader{
+			height: 20%;
+			border-bottom: 1px solid rgba(0,0,0,0.6);
+			font-size: 2em;
+		}
+		.popUpBody{
+			height: 60%;
+		}
+		.popUpBodyContent{
+			width: 80%;
+			margin: 0 auto;
+			padding-top: 8%;
+			font-size: 1.3em;
+		}
+		.popUpActions{
+			height: 20%;
+			background-color: rgba(134, 134, 134, 1);
+			border-radius: 2%;
+		}
+		.popUpActionsYes, .popUpActionsNo{
+			width: 50%;
+			cursor: pointer;
+		}
+		.popUpActionsOk{
+			width: 100%;
+			cursor: pointer;
+		}
+		.popUpActionsYes, .popUpActionsNo, .popUpActionsOk{
+			background-color: rgba(16, 159, 139, 0.4);	
+			color: #fff;
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+		.popUpActionsYes:hover, .popUpActionsNo:hover, .popUpActionsOk:hover{
+			background-color: rgba(16, 159, 139, 1);
+		}
+		
+		@media only screen and (max-width: 950px) {
+			.popUpContainerBlock:nth-child(2) > td{
+				height: 35%;
+			}
+			.popUpContainerBlock > td:nth-child(2){
+				width: 45%;
+			}
+		}
+		@media only screen and (max-width: 700px) {
+			.popUpContainerBlock:nth-child(2) > td{
+				height: 33%;
+			}
+			.popUpContainerBlock > td:nth-child(1){
+				width: 16.3%;
+			}
+			.popUpContainerBlock > td:nth-child(2){
+				width: 65%;
+			}
+		}
+		@media only screen and (max-width: 400px) {
+			.popUpContainerBlock:nth-child(2) > td{
+				height: 30%;
+			}
+			.popUpContainerBlock > td:nth-child(1){
+				width: 10.3%;
+			}
+			.popUpContainerBlock > td:nth-child(2){
+				width: 80%;
+			}
+		}
